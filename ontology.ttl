@@ -188,9 +188,9 @@ saref:offers rdf:type owl:ObjectProperty ;
              rdfs:label "offers"^^xsd:string .
 
 
-###  https://w3id.org/saref#participatesIn
-saref:participatesIn rdf:type owl:ObjectProperty ;
-                   rdfs:label "participatesIn" .
+###  https://w3id.org/saref#isParticipantIn
+saref:isParticipantIn rdf:type owl:ObjectProperty ;
+                   rdfs:label "isParticipantIn" .
 
 
 ###  https://w3id.org/saref#relatesToMeasurement
@@ -285,7 +285,7 @@ saref:Actuator rdf:type owl:Class ;
 ###  https://w3id.org/saref#Agent
 saref:Agent rdf:type owl:Class ;
             rdfs:subClassOf [ rdf:type owl:Restriction ;
-                              owl:onProperty saref:participatesIn ;
+                              owl:onProperty saref:isParticipantIn ;
                               owl:someValuesFrom saref:Organization
                             ] ;
             rdfs:comment "An agent is a person or piece of software" ;
