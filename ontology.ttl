@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/saref4evaluation#> .
+@prefix : <https://w3id.org/saref#> .
 @prefix om: <http://www.wurvoc.org/vocabularies/om-1.8/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -10,14 +10,15 @@
 @prefix saref: <https://w3id.org/saref#> .
 @prefix schema: <http://schema.org/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <https://w3id.org/saref4evaluation> .
+@base <https://w3id.org/saref> .
 
-<https://w3id.org/saref4evaluation> rdf:type owl:Ontology ;
-                          owl:versionInfo "0.0.1"^^xsd:string ;
-                          dcterms:title "SAREF for Themis evaluation"^^xsd:string ;
+<https://w3id.org/saref> rdf:type owl:Ontology ;
+                          owl:imports <http://www.w3.org/2006/time> ;
+                          rdfs:comment "Version of SAREF ontology for evaluating Themis. This ontology is created only for testing purposes" ;
                           dcterms:created "2019-04-22"^^xsd:date ;
                           dcterms:contributor <http://www.garcia-castro.com/foaf.rdf#me> ;
-                          rdfs:comment "Version of SAREF ontology for evaluating Themis. This ontology is created only for testing purposes" .
+                          owl:versionInfo "0.0.1"^^xsd:string ;
+                          dcterms:title "SAREF for Themis evaluation"^^xsd:string .
 
 #################################################################
 #    Object Properties
@@ -73,6 +74,12 @@ saref:hasMeterReadingType rdf:type owl:ObjectProperty ;
                           rdfs:label "has meter reading type"^^xsd:string .
 
 
+###  https://w3id.org/saref#hasParticipant
+saref:hasParticipant rdf:type owl:ObjectProperty ;
+                     owl:inverseOf saref:isParticipantIn ;
+                     rdfs:label "hasParticipant" .
+
+
 ###  https://w3id.org/saref#hasPrice
 saref:hasPrice rdf:type owl:ObjectProperty ;
                rdfs:comment "A relationships indentifying the price associated to an entity"^^xsd:string ;
@@ -121,6 +128,11 @@ saref:hasTypicalConsumption rdf:type owl:ObjectProperty ;
                             rdfs:label "has typical consumption"^^xsd:string .
 
 
+###  https://w3id.org/saref#interactsUsing
+saref:interactsUsing rdf:type owl:ObjectProperty ;
+                     rdfs:label "interacts using" .
+
+
 ###  https://w3id.org/saref#isAbout
 saref:isAbout rdf:type owl:ObjectProperty ;
               rdfs:comment "A relationship identifying what an entity, such as a Profile, is about"@en ;
@@ -164,6 +176,10 @@ saref:isOfferedBy rdf:type owl:ObjectProperty ;
                   rdfs:label "is offered by"^^xsd:string .
 
 
+###  https://w3id.org/saref#isParticipantIn
+saref:isParticipantIn rdf:type owl:ObjectProperty .
+
+
 ###  https://w3id.org/saref#isUsedFor
 saref:isUsedFor rdf:type owl:ObjectProperty ;
                 rdfs:comment "A relationship specifying the purpose for which a device is used for (e.g., controlling a Commodity)"^^xsd:string ;
@@ -186,11 +202,6 @@ saref:measuresProperty rdf:type owl:ObjectProperty ;
 saref:offers rdf:type owl:ObjectProperty ;
              rdfs:comment "A relationship between a device and a service"^^xsd:string ;
              rdfs:label "offers"^^xsd:string .
-
-
-###  https://w3id.org/saref#isParticipantIn
-saref:isParticipantIn rdf:type owl:ObjectProperty ;
-                   rdfs:label "isParticipantIn" .
 
 
 ###  https://w3id.org/saref#relatesToMeasurement
@@ -297,6 +308,12 @@ saref:Appliance rdf:type owl:Class ;
                 rdfs:subClassOf saref:FunctionRelated ;
                 rdfs:comment "An electrical/mechanical machine that accomplish some household functions, such as cleaning or cooking"^^xsd:string ;
                 rdfs:label "Appliance"^^xsd:string .
+
+
+###  https://w3id.org/saref#Application
+saref:Application rdf:type owl:Class ;
+                  rdfs:comment "An application is a software entity or system that allows a user to interact with entities" ;
+                  rdfs:label "Application" .
 
 
 ###  https://w3id.org/saref#BuildingRelated
@@ -932,6 +949,10 @@ saref:OpenState rdf:type owl:Class ;
 
 ###  https://w3id.org/saref#Organization
 saref:Organization rdf:type owl:Class ;
+                   rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                     owl:onProperty saref:hasParticipant ;
+                                     owl:someValuesFrom saref:Agent
+                                   ] ;
                    rdfs:comment "Collection of people or entities organized together into a community or other social, commercial or political structure." ;
                    rdfs:label "Organization" .
 
