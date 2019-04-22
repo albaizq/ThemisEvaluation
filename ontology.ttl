@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/saref#> .
+@prefix : <https://w3id.org/saref4evaluation#> .
 @prefix om: <http://www.wurvoc.org/vocabularies/om-1.8/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -10,7 +10,7 @@
 @prefix saref: <https://w3id.org/saref#> .
 @prefix schema: <http://schema.org/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <https://w3id.org/saref> .
+@base <https://w3id.org/saref4evaluation> .
 
 <https://w3id.org/saref> rdf:type owl:Ontology ;
                           owl:imports <http://www.w3.org/2006/time> ;
