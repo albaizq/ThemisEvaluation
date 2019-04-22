@@ -13,7 +13,6 @@
 @base <https://w3id.org/saref4evaluation> .
 
 <https://w3id.org/saref> rdf:type owl:Ontology ;
-                          owl:imports <http://www.w3.org/2006/time> ;
                           owl:versionInfo "0.0.1"^^xsd:string ;
                           dcterms:title "SAREF for Themis evaluation"^^xsd:string ;
                           dcterms:created "2019-04-22"^^xsd:date ;
@@ -189,9 +188,9 @@ saref:offers rdf:type owl:ObjectProperty ;
              rdfs:label "offers"^^xsd:string .
 
 
-###  https://w3id.org/saref#participates
-saref:participates rdf:type owl:ObjectProperty ;
-                   rdfs:label "participates" .
+###  https://w3id.org/saref#participatesIn
+saref:participatesIn rdf:type owl:ObjectProperty ;
+                   rdfs:label "participatesIn" .
 
 
 ###  https://w3id.org/saref#relatesToMeasurement
@@ -286,7 +285,7 @@ saref:Actuator rdf:type owl:Class ;
 ###  https://w3id.org/saref#Agent
 saref:Agent rdf:type owl:Class ;
             rdfs:subClassOf [ rdf:type owl:Restriction ;
-                              owl:onProperty saref:participates ;
+                              owl:onProperty saref:participatesIn ;
                               owl:someValuesFrom saref:Organization
                             ] ;
             rdfs:comment "An agent is a person or piece of software" ;
