@@ -1,7 +1,5 @@
 <https://w3id.org/saref> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://w3id.org/saref> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2006/time> .
-<https://w3id.org/saref> <http://purl.org/dc/terms/contributor> <http://www.garcia-castro.com/foaf.rdf#me> .
-<https://w3id.org/saref> <http://purl.org/dc/terms/created> "2019-04-22"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/saref> <http://purl.org/dc/terms/title> "SAREF for Themis evaluation" .
 <https://w3id.org/saref> <http://www.w3.org/2000/01/rdf-schema#comment> "Version of SAREF ontology for evaluating Themis. This ontology is created only for testing purposes" .
 <https://w3id.org/saref> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .

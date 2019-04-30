@@ -43,9 +43,6 @@
     "Commodity" : {
       "@id" : "https://w3id.org/saref#Commodity"
     },
-    "created" : {
-      "@id" : "http://purl.org/dc/terms/created"
-    },
     "Humidity" : {
       "@id" : "https://w3id.org/saref#Humidity"
     },
@@ -423,9 +420,6 @@
     "controlsProperty" : {
       "@id" : "https://w3id.org/saref#controlsProperty",
       "@type" : "@id"
-    },
-    "contributor" : {
-      "@id" : "http://purl.org/dc/terms/contributor"
     },
     "EnergyMeter" : {
       "@id" : "https://w3id.org/saref#EnergyMeter"

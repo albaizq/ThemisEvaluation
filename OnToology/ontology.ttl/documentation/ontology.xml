@@ -10,8 +10,6 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/saref">
         <owl:imports rdf:resource="http://www.w3.org/2006/time"/>
-        <terms:contributor rdf:resource="http://www.garcia-castro.com/foaf.rdf#me"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-04-22</terms:created>
         <terms:title>SAREF for Themis evaluation</terms:title>
         <rdfs:comment>Version of SAREF ontology for evaluating Themis. This ontology is created only for testing purposes</rdfs:comment>
         <owl:versionInfo>0.0.1</owl:versionInfo>

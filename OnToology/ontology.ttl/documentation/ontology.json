@@ -1105,13 +1105,6 @@
 }, {
   "@id" : "https://w3id.org/saref",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "http://purl.org/dc/terms/contributor" : [ {
-    "@id" : "http://www.garcia-castro.com/foaf.rdf#me"
-  } ],
-  "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2019-04-22"
-  } ],
   "http://purl.org/dc/terms/title" : [ {
     "@value" : "SAREF for Themis evaluation"
   } ],
