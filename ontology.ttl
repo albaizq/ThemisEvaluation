@@ -15,8 +15,6 @@
 <https://w3id.org/saref> rdf:type owl:Ontology ;
                           owl:imports <http://www.w3.org/2006/time> ;
                           rdfs:comment "Version of SAREF ontology for evaluating Themis. This ontology is created only for testing purposes" ;
-                          dcterms:created "2019-04-22"^^xsd:date ;
-                          dcterms:contributor <http://www.garcia-castro.com/foaf.rdf#me> ;
                           owl:versionInfo "0.0.1"^^xsd:string ;
                           dcterms:title "SAREF for Themis evaluation"^^xsd:string .
 
