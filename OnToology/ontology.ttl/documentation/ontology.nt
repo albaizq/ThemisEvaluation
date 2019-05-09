@@ -1,5 +1,5 @@
 <https://w3id.org/def/themisEval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/def/themisEval> <http://purl.org/dc/terms/title> "SAREF for Themis evaluation" .
+<https://w3id.org/def/themisEval> <http://purl.org/dc/terms/title> "SAREF for Themis evaluation"^^<http://www.w3.org/2001/XMLSchema#stringit> .
 <https://w3id.org/def/themisEval> <http://www.w3.org/2000/01/rdf-schema#comment> "Version of SAREF ontology for evaluating Themis. This ontology is created only for testing purposes" .
 <https://w3id.org/def/themisEval> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.2" .
 # 
@@ -342,52 +342,56 @@ _:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themi
 _:genid12 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/themisEval#Commodity> .
 <https://w3id.org/def/themisEval#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
 _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#measuresProperty> .
-_:genid13 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/themisEval#Property> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#makesMeasurement> .
+_:genid13 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/themisEval#Measurement> .
 <https://w3id.org/def/themisEval#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
 _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#offers> .
-_:genid14 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/themisEval#Service> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#measuresProperty> .
+_:genid14 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/themisEval#Property> .
 <https://w3id.org/def/themisEval#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
 _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#accomplishes> .
-_:genid15 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid15 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/themisEval#Task> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#offers> .
+_:genid15 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/themisEval#Service> .
 <https://w3id.org/def/themisEval#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
 _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#hasFunction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#accomplishes> .
 _:genid16 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid16 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/themisEval#Function> .
+_:genid16 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/themisEval#Task> .
 <https://w3id.org/def/themisEval#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
 _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#hasDescription> .
-_:genid17 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#hasFunction> .
+_:genid17 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid17 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/themisEval#Function> .
 <https://w3id.org/def/themisEval#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
 _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#hasManufacturer> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#hasDescription> .
 _:genid18 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 <https://w3id.org/def/themisEval#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
 _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#hasModel> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#hasManufacturer> .
 _:genid19 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<https://w3id.org/def/themisEval#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#hasModel> .
+_:genid20 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 <https://w3id.org/def/themisEval#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "A tangible object designed to accomplish a particular task in households, common public buildings or offices. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs a start and stop function. Devices can be structured in categories (subclasses) that reflect the different domain in which a device is used, e.g., smart appliances domain (subclass FunctionRelated) vs. building domain (subclass BuildingRelated) vs. smart grid domain (subclass EnergyRelated). New categories can be defined,if needed, to reflect other differences, for example different points of view, such as the point of view of the device's user vs. the point of view of the device's manufacturer. We propose a list of devices that are relevant for the purpose of SAREF, but this list can be extended." .
 <https://w3id.org/def/themisEval#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device" .
 # 
 # https://w3id.org/def/themisEval#DoorSwitch
 <https://w3id.org/def/themisEval#DoorSwitch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/themisEval#DoorSwitch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/themisEval#Switch> .
-<https://w3id.org/def/themisEval#DoorSwitch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#consistsOf> .
-_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/themisEval#Switch> .
 <https://w3id.org/def/themisEval#DoorSwitch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
 _:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#hasFunction> .
-_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/themisEval#OpenCloseFunction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#consistsOf> .
+_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/themisEval#Switch> .
 <https://w3id.org/def/themisEval#DoorSwitch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
 _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#accomplishes> .
-_:genid22 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/def/themisEval#Safety> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#hasFunction> .
+_:genid22 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/themisEval#OpenCloseFunction> .
+<https://w3id.org/def/themisEval#DoorSwitch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#accomplishes> .
+_:genid23 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/def/themisEval#Safety> .
 <https://w3id.org/def/themisEval#DoorSwitch> <http://www.w3.org/2000/01/rdf-schema#comment> "A device of category saref:Actuator that consists of a switch, accomplishes the task saref:Safety, performs the saref:OpenCloseFunction, is used for controlling a door, and can be found in the state saref:OpenCloseState." .
 <https://w3id.org/def/themisEval#DoorSwitch> <http://www.w3.org/2000/01/rdf-schema#label> "Door switch" .
 # 
@@ -406,22 +410,22 @@ _:genid22 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/def/themisE
 # https://w3id.org/def/themisEval#EnergyMeter
 <https://w3id.org/def/themisEval#EnergyMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/themisEval#EnergyMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/themisEval#Meter> .
-<https://w3id.org/def/themisEval#EnergyMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#consistsOf> .
-_:genid23 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/themisEval#Meter> .
 <https://w3id.org/def/themisEval#EnergyMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
 _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#measuresProperty> .
-_:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/themisEval#Energy> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#consistsOf> .
+_:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/themisEval#Meter> .
 <https://w3id.org/def/themisEval#EnergyMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
 _:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#accomplishes> .
-_:genid25 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/def/themisEval#EnergyEfficiency> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#measuresProperty> .
+_:genid25 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/themisEval#Energy> .
 <https://w3id.org/def/themisEval#EnergyMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
 _:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#accomplishes> .
-_:genid26 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/def/themisEval#MeterReading> .
+_:genid26 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/def/themisEval#EnergyEfficiency> .
+<https://w3id.org/def/themisEval#EnergyMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#accomplishes> .
+_:genid27 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/def/themisEval#MeterReading> .
 <https://w3id.org/def/themisEval#EnergyMeter> <http://www.w3.org/2000/01/rdf-schema#comment> "An energy meter is a device of category saref:Meter that consists of a meter, accomplishes the tasks saref:MeterReading and saref:EnergyEfficiency, performs the saref:MeteringFunction and is used for the purpose of measuring the saref:Energy property" .
 <https://w3id.org/def/themisEval#EnergyMeter> <http://www.w3.org/2000/01/rdf-schema#label> "Energy meter" .
 # 
@@ -438,20 +442,20 @@ _:genid26 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/def/themisE
 # https://w3id.org/def/themisEval#EventFunction
 <https://w3id.org/def/themisEval#EventFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/themisEval#EventFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/themisEval#Function> .
-<https://w3id.org/def/themisEval#EventFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#hasCommand> .
-_:genid27 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/themisEval#NotifyCommand> .
+<https://w3id.org/def/themisEval#EventFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#hasCommand> .
+_:genid28 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/themisEval#NotifyCommand> .
 <https://w3id.org/def/themisEval#EventFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "A function that allows to notify another device that a certain threshold value has been exceeded." .
 <https://w3id.org/def/themisEval#EventFunction> <http://www.w3.org/2000/01/rdf-schema#label> "Event function" .
 # 
 # https://w3id.org/def/themisEval#Function
 <https://w3id.org/def/themisEval#Function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/themisEval#Function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
-_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#hasCommand> .
-_:genid28 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid28 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/themisEval#Command> .
+<https://w3id.org/def/themisEval#Function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#hasCommand> .
+_:genid29 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid29 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/themisEval#Command> .
 <https://w3id.org/def/themisEval#Function> <http://www.w3.org/2000/01/rdf-schema#comment> "The functionality necessary to accomplish the task for which a Device is designed. A device can be designed to perform more than one function. Functions can be structured in categories (subclasses) that reflect different points of view, for example, considering the specific application area for which a function can be used (e.g., light, temperature, motion, heat, power, etc.), or the capability that a function can support (e.g., receive, reply, notify, etc.), and so forth. " .
 <https://w3id.org/def/themisEval#Function> <http://www.w3.org/2000/01/rdf-schema#label> "Function" .
 # 
@@ -482,12 +486,16 @@ _:genid28 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/themisEv
 # https://w3id.org/def/themisEval#HVAC
 <https://w3id.org/def/themisEval#HVAC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/themisEval#HVAC> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/themisEval#FunctionRelated> .
-<https://w3id.org/def/themisEval#HVAC> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#accomplishes> .
-_:genid29 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/def/themisEval#Comfort> .
+<https://w3id.org/def/themisEval#HVAC> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#accomplishes> .
+_:genid30 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/def/themisEval#Comfort> .
 <https://w3id.org/def/themisEval#HVAC> <http://www.w3.org/2000/01/rdf-schema#comment> "Heating, Ventilation and Air Conditioning (HVAC) device that provides indoor environmental comfort" .
 <https://w3id.org/def/themisEval#HVAC> <http://www.w3.org/2000/01/rdf-schema#label> "HVAC" .
+# 
+# https://w3id.org/def/themisEval#Indicator
+<https://w3id.org/def/themisEval#Indicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/themisEval#Indicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/themisEval#Measurement> .
 # 
 # https://w3id.org/def/themisEval#LevelControlFunction
 <https://w3id.org/def/themisEval#LevelControlFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -504,32 +512,32 @@ _:genid29 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/def/themisE
 # https://w3id.org/def/themisEval#LightSwitch
 <https://w3id.org/def/themisEval#LightSwitch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/themisEval#LightSwitch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/themisEval#Switch> .
-<https://w3id.org/def/themisEval#LightSwitch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#consistsOf> .
-_:genid30 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/themisEval#Switch> .
 <https://w3id.org/def/themisEval#LightSwitch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
 _:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#hasFunction> .
-_:genid31 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/themisEval#OnOffFunction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#consistsOf> .
+_:genid31 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/themisEval#Switch> .
 <https://w3id.org/def/themisEval#LightSwitch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
 _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#measuresProperty> .
-_:genid32 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/themisEval#Light> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#hasFunction> .
+_:genid32 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/themisEval#OnOffFunction> .
 <https://w3id.org/def/themisEval#LightSwitch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
 _:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#accomplishes> .
-_:genid33 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/def/themisEval#Lighting> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#measuresProperty> .
+_:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/themisEval#Light> .
+<https://w3id.org/def/themisEval#LightSwitch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#accomplishes> .
+_:genid34 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/def/themisEval#Lighting> .
 <https://w3id.org/def/themisEval#LightSwitch> <http://www.w3.org/2000/01/rdf-schema#comment> "A device of category saref:Actuator that consists of a switch, accomplishes the task saref:Lighting, performs the saref:OnOffFunction, measures the property saref:Light, and can be found in the state saref:OnOffState. It can offer a switch on service." .
 <https://w3id.org/def/themisEval#LightSwitch> <http://www.w3.org/2000/01/rdf-schema#label> "Light switch" .
 # 
 # https://w3id.org/def/themisEval#LightingDevice
 <https://w3id.org/def/themisEval#LightingDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/themisEval#LightingDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/themisEval#FunctionRelated> .
-<https://w3id.org/def/themisEval#LightingDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#accomplishes> .
-_:genid34 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/def/themisEval#Comfort> .
+<https://w3id.org/def/themisEval#LightingDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#accomplishes> .
+_:genid35 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/def/themisEval#Comfort> .
 <https://w3id.org/def/themisEval#LightingDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "A device used for illumination, irradiation, signaling, or projection" .
 <https://w3id.org/def/themisEval#LightingDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Lighting device" .
 # 
@@ -539,31 +547,63 @@ _:genid34 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/def/themisE
 <https://w3id.org/def/themisEval#Load> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of energy-related device that consumes energy" .
 <https://w3id.org/def/themisEval#Load> <http://www.w3.org/2000/01/rdf-schema#label> "Load" .
 # 
+# https://w3id.org/def/themisEval#Measurement
+<https://w3id.org/def/themisEval#Measurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/themisEval#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#isMeasuredIn> .
+_:genid36 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/themisEval#UnitOfMeasure> .
+<https://w3id.org/def/themisEval#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#relatesToProperty> .
+_:genid37 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/themisEval#Property> .
+<https://w3id.org/def/themisEval#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#isMeasuredIn> .
+_:genid38 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid38 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/themisEval#UnitOfMeasure> .
+<https://w3id.org/def/themisEval#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#relatesToProperty> .
+_:genid39 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid39 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/themisEval#Property> .
+<https://w3id.org/def/themisEval#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#hasTimestamp> .
+_:genid40 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/def/themisEval#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#hasValue> .
+_:genid41 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid41 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/def/themisEval#Measurement> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement."@en .
+<https://w3id.org/def/themisEval#Measurement> <http://www.w3.org/2000/01/rdf-schema#label> "Measurement"@en .
+# 
 # https://w3id.org/def/themisEval#Meter
 <https://w3id.org/def/themisEval#Meter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/themisEval#Meter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/themisEval#FunctionRelated> .
-<https://w3id.org/def/themisEval#Meter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#hasFunction> .
-_:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/themisEval#MeteringFunction> .
+<https://w3id.org/def/themisEval#Meter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#hasFunction> .
+_:genid42 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/themisEval#MeteringFunction> .
 <https://w3id.org/def/themisEval#Meter> <http://www.w3.org/2000/01/rdf-schema#comment> "A device built to accurately detect and display a quantity in a form readable by a human being. Further, a device of category saref:Meter that performs a saref:MeteringFunction." .
 <https://w3id.org/def/themisEval#Meter> <http://www.w3.org/2000/01/rdf-schema#label> "Meter" .
 # 
 # https://w3id.org/def/themisEval#MeteringFunction
 <https://w3id.org/def/themisEval#MeteringFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/themisEval#MeteringFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/themisEval#Function> .
-<https://w3id.org/def/themisEval#MeteringFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#hasMeterReadingType> .
-_:genid36 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid37 .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid37 <http://www.w3.org/2002/07/owl#unionOf> _:genid39 .
-_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/themisEval#Commodity> .
-_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/themisEval#Property> .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/def/themisEval#MeteringFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#hasMeterReadingType> .
+_:genid43 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid44 <http://www.w3.org/2002/07/owl#unionOf> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/themisEval#Commodity> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/themisEval#Property> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://w3id.org/def/themisEval#MeteringFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "A function that allows to get data from a meter, such as current meter reading or instantaneous demand" .
 <https://w3id.org/def/themisEval#MeteringFunction> <http://www.w3.org/2000/01/rdf-schema#label> "Metering function" .
 # 
@@ -600,10 +640,10 @@ _:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # https://w3id.org/def/themisEval#Organization
 <https://w3id.org/def/themisEval#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/themisEval#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
-_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#hasParticipant> .
-_:genid40 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/themisEval#Agent> .
+<https://w3id.org/def/themisEval#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#hasParticipant> .
+_:genid47 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/themisEval#Agent> .
 <https://w3id.org/def/themisEval#Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "Collection of people or entities organized together into a community or other social, commercial or political structure." .
 <https://w3id.org/def/themisEval#Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization" .
 # 
@@ -631,49 +671,49 @@ _:genid40 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/t
 # 
 # https://w3id.org/def/themisEval#Property
 <https://w3id.org/def/themisEval#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/themisEval#Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
-_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#isControlledByDevice> .
-_:genid41 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/themisEval#Device> .
-<https://w3id.org/def/themisEval#Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
-_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#isMeasuredByDevice> .
-_:genid42 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/themisEval#Device> .
+<https://w3id.org/def/themisEval#Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#isControlledByDevice> .
+_:genid48 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/themisEval#Device> .
+<https://w3id.org/def/themisEval#Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#isMeasuredByDevice> .
+_:genid49 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/themisEval#Device> .
 <https://w3id.org/def/themisEval#Property> <http://www.w3.org/2000/01/rdf-schema#comment> "Anything that can be sensed, measured or controlled in households, common public buildings or offices. We propose here a list of properties that are relevant for the purpose of SAREF, but this list can be extended." .
 <https://w3id.org/def/themisEval#Property> <http://www.w3.org/2000/01/rdf-schema#label> "Property" .
 # 
 # https://w3id.org/def/themisEval#SensingFunction
 <https://w3id.org/def/themisEval#SensingFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/themisEval#SensingFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/themisEval#Function> .
-<https://w3id.org/def/themisEval#SensingFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
-_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#hasSensorType> .
-_:genid43 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/themisEval#Property> .
+<https://w3id.org/def/themisEval#SensingFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#hasSensorType> .
+_:genid50 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/themisEval#Property> .
 <https://w3id.org/def/themisEval#SensingFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "A function that allows to transmit data from sensors, such as measurement values (e.g., temperature) or sensing data (e.g., occupancy)" .
 <https://w3id.org/def/themisEval#SensingFunction> <http://www.w3.org/2000/01/rdf-schema#label> "Sensing function" .
 # 
 # https://w3id.org/def/themisEval#Sensor
 <https://w3id.org/def/themisEval#Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/themisEval#Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/themisEval#FunctionRelated> .
-<https://w3id.org/def/themisEval#Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
-_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#hasFunction> .
-_:genid44 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/themisEval#SensingFunction> .
+<https://w3id.org/def/themisEval#Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#hasFunction> .
+_:genid51 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/themisEval#SensingFunction> .
 <https://w3id.org/def/themisEval#Sensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes. Further, a device of category saref:Sensor that performs a saref:SensingFunction." .
 <https://w3id.org/def/themisEval#Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "Sensor" .
 # 
 # https://w3id.org/def/themisEval#Service
 <https://w3id.org/def/themisEval#Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/themisEval#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
-_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#isOfferedBy> .
-_:genid45 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid45 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/themisEval#Device> .
-<https://w3id.org/def/themisEval#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
-_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#represents> .
-_:genid46 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid46 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/themisEval#Function> .
+<https://w3id.org/def/themisEval#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#isOfferedBy> .
+_:genid52 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid52 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/themisEval#Device> .
+<https://w3id.org/def/themisEval#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#represents> .
+_:genid53 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid53 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/themisEval#Function> .
 <https://w3id.org/def/themisEval#Service> <http://www.w3.org/2000/01/rdf-schema#comment> "A service is a representation of a function to a network that makes the function discoverable, registerable, remotely controllable by other devices in the network. A service can represent one or more functions. A Service is offered by a device that wants (a certain set of) its function(s) to be discoverable, registerable, remotely controllable by other devices in the network. A Service must specify the device that is offering the service and the function(s) to be represented." .
 <https://w3id.org/def/themisEval#Service> <http://www.w3.org/2000/01/rdf-schema#label> "Service" .
 # 
@@ -686,26 +726,26 @@ _:genid46 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/themisEv
 # https://w3id.org/def/themisEval#SmokeSensor
 <https://w3id.org/def/themisEval#SmokeSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/themisEval#SmokeSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/themisEval#Sensor> .
-<https://w3id.org/def/themisEval#SmokeSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
-_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#consistsOf> .
-_:genid47 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/themisEval#Sensor> .
-<https://w3id.org/def/themisEval#SmokeSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
-_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#hasFunction> .
-_:genid48 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/themisEval#EventFunction> .
-<https://w3id.org/def/themisEval#SmokeSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
-_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#hasFunction> .
-_:genid49 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/themisEval#SensingFunction> .
-<https://w3id.org/def/themisEval#SmokeSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
-_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#measuresProperty> .
-_:genid50 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/themisEval#Smoke> .
-<https://w3id.org/def/themisEval#SmokeSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
-_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#accomplishes> .
-_:genid51 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/def/themisEval#Safety> .
+<https://w3id.org/def/themisEval#SmokeSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#consistsOf> .
+_:genid54 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/themisEval#Sensor> .
+<https://w3id.org/def/themisEval#SmokeSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#hasFunction> .
+_:genid55 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/themisEval#EventFunction> .
+<https://w3id.org/def/themisEval#SmokeSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#hasFunction> .
+_:genid56 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/themisEval#SensingFunction> .
+<https://w3id.org/def/themisEval#SmokeSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#measuresProperty> .
+_:genid57 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/themisEval#Smoke> .
+<https://w3id.org/def/themisEval#SmokeSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#accomplishes> .
+_:genid58 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/def/themisEval#Safety> .
 <https://w3id.org/def/themisEval#SmokeSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A device that consists of a sensor, has category saref:Sensor, performs the saref:SensingFunction and saref:EventFunction (which notifies that a certain threshold has been exceeded), and is used for the purpose of sensing a property of type saref:Smoke." .
 <https://w3id.org/def/themisEval#SmokeSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Smoke sensor" .
 # 
@@ -729,11 +769,11 @@ _:genid51 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/def/themisE
 # 
 # https://w3id.org/def/themisEval#Task
 <https://w3id.org/def/themisEval#Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/themisEval#Task> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
-_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#isAccomplishedBy> .
-_:genid52 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid52 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/themisEval#Device> .
+<https://w3id.org/def/themisEval#Task> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#isAccomplishedBy> .
+_:genid59 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid59 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/themisEval#Device> .
 <https://w3id.org/def/themisEval#Task> <http://www.w3.org/2000/01/rdf-schema#comment> "The goal for which a device is designed (from a user perspective). For example, a washing machine is designed for the task of washing. We propose here a list of tasks that are relevant for the purpose of SAREF, but this list can be extended." .
 <https://w3id.org/def/themisEval#Task> <http://www.w3.org/2000/01/rdf-schema#label> "Task" .
 # 
@@ -746,22 +786,22 @@ _:genid52 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/themisEv
 # https://w3id.org/def/themisEval#TemperatureSensor
 <https://w3id.org/def/themisEval#TemperatureSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/themisEval#TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/themisEval#Sensor> .
-<https://w3id.org/def/themisEval#TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
-_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#consistsOf> .
-_:genid53 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/themisEval#Sensor> .
-<https://w3id.org/def/themisEval#TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
-_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#hasFunction> .
-_:genid54 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/themisEval#SensingFunction> .
-<https://w3id.org/def/themisEval#TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
-_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#measuresProperty> .
-_:genid55 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/themisEval#Temperature> .
-<https://w3id.org/def/themisEval#TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid56 .
-_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#accomplishes> .
-_:genid56 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/def/themisEval#Comfort> .
+<https://w3id.org/def/themisEval#TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#consistsOf> .
+_:genid60 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/themisEval#Sensor> .
+<https://w3id.org/def/themisEval#TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid61 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#hasFunction> .
+_:genid61 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/themisEval#SensingFunction> .
+<https://w3id.org/def/themisEval#TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#measuresProperty> .
+_:genid62 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/themisEval#Temperature> .
+<https://w3id.org/def/themisEval#TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid63 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#accomplishes> .
+_:genid63 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/def/themisEval#Comfort> .
 <https://w3id.org/def/themisEval#TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A device that consists of a sensor, has category saref:Sensor, performs the saref:SensingFunction and is used for the purpose of sensing a property of type saref:Temperature" .
 <https://w3id.org/def/themisEval#TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Temperature sensor" .
 # 
@@ -775,14 +815,14 @@ _:genid56 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/def/themisE
 <https://w3id.org/def/themisEval#WashingMachine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/themisEval#WashingMachine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/themisEval#Appliance> .
 <https://w3id.org/def/themisEval#WashingMachine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/themisEval#Load> .
-<https://w3id.org/def/themisEval#WashingMachine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
-_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#hasFunction> .
-_:genid57 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/themisEval#StartStopFunction> .
-<https://w3id.org/def/themisEval#WashingMachine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
-_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#accomplishes> .
-_:genid58 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/def/themisEval#Washing> .
+<https://w3id.org/def/themisEval#WashingMachine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#hasFunction> .
+_:genid64 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/themisEval#StartStopFunction> .
+<https://w3id.org/def/themisEval#WashingMachine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid65 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/themisEval#accomplishes> .
+_:genid65 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/def/themisEval#Washing> .
 <https://w3id.org/def/themisEval#WashingMachine> <http://www.w3.org/2000/01/rdf-schema#comment> "A device of category saref:Appliance and saref:Load that accomplishes the task saref:Washing, performs an actuating function of type saref:StartStopFunction, can be found in the state saref:StartStopState, and can have a saref:Profile that characterizes its energy consumption. " .
 <https://w3id.org/def/themisEval#WashingMachine> <http://www.w3.org/2000/01/rdf-schema#label> "Washing machine" .
 # 
