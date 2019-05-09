@@ -1577,6 +1577,15 @@
     
 
 
+    <!-- https://w3id.org/def/themisEval#AccumulatedEnergyProduced -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/themisEval#AccumulatedEnergyProduced">
+        <rdf:type rdf:resource="https://w3id.org/def/themisEval#Power"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/def/themisEval#Cleaning -->
 
 
