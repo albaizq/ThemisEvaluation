@@ -831,6 +831,9 @@ _:genid65 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/def/themisE
 <https://w3id.org/def/themisEval#WashingMachine> <http://www.w3.org/2000/01/rdf-schema#comment> "A device of category saref:Appliance and saref:Load that accomplishes the task saref:Washing, performs an actuating function of type saref:StartStopFunction, can be found in the state saref:StartStopState, and can have a saref:Profile that characterizes its energy consumption. " .
 <https://w3id.org/def/themisEval#WashingMachine> <http://www.w3.org/2000/01/rdf-schema#label> "Washing machine" .
 # 
+# https://w3id.org/saref#Power
+<https://w3id.org/saref#Power> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # 
 # 
 # #################################################################
@@ -898,7 +901,7 @@ _:genid65 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/def/themisE
 # 
 # https://w3id.org/def/themisEval#AccumulatedEnergyProduced
 <https://w3id.org/def/themisEval#AccumulatedEnergyProduced> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/themisEval#AccumulatedEnergyProduced> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/themisEval#Property> .
+<https://w3id.org/def/themisEval#AccumulatedEnergyProduced> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#Power> .
 # 
 # https://w3id.org/def/themisEval#Cleaning
 <https://w3id.org/def/themisEval#Cleaning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

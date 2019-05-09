@@ -719,7 +719,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/def/themisEval#AccumulatedEnergyProduced",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/themisEval#Property" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#Power" ]
 }, {
   "@id" : "https://w3id.org/def/themisEval#ActuatingFunction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -2113,4 +2113,7 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "watt hour"
   } ]
+}, {
+  "@id" : "https://w3id.org/saref#Power",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 } ]

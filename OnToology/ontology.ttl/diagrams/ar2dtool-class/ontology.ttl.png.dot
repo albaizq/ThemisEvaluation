@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "base:StartStopFunction" "base:Temperature" "base:Service" "base:Smoke" "base:Agent" "base:Function" "base:Energy" "base:EventFunction" "base:Switch" "base:ActuatingFunction" "base:OnOffFunction" "base:Task" "base:Commodity" "9c588ff26a792ed381ba5d3ee6851e80" "base:UnitOfMeasure" "6011c23a5184a89fb5cda3f113c87c39" "base:NotifyCommand" "base:Device" "base:Organization" "base:Meter" "base:OffCommand" "base:Property" "base:MeteringFunction" "base:Command" "base:Light" "base:OpenCloseFunction" "base:Sensor" "base:OnCommand" "base:Measurement" "base:Power" "base:SensingFunction" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "base:StartStopFunction" "base:Temperature" "base:Service" "base:Smoke" "base:Agent" "base:Function" "base:Energy" "base:EventFunction" "base:Switch" "base:ActuatingFunction" "base:OnOffFunction" "324821edcb13daab7e672680062619ef" "base:Task" "base:Commodity" "base:UnitOfMeasure" "base:NotifyCommand" "base:Device" "base:Organization" "base:Meter" "base:OffCommand" "base:Property" "base:MeteringFunction" "base:Command" "base:Light" "base:OpenCloseFunction" "base:Sensor" "base:OnCommand" "base:Measurement" "5c56761723c9be2a7aac2bfde43b6231" "base:Power" "base:SensingFunction" ; /*classes style*/
 	"base:OffCommand" -> "base:OnCommand" [ label = "owl:disjointWith" ];
 	"NULL" -> "base:hasTypicalConsumption" [ label = "owl:onProperty" ];
 	"NULL" -> "base:hasModel" [ label = "owl:onProperty" ];
@@ -9,12 +9,10 @@ node [shape = rectangle, color="orange"]; "base:StartStopFunction" "base:Tempera
 	"NULL" -> "base:isControlledByDevice" [ label = "owl:onProperty" ];
 	"NULL" -> "base:Measurement" [ label = "owl:allValuesFrom" ];
 	"NULL" -> "base:OnOffFunction" [ label = "owl:someValuesFrom" ];
-	"NULL" -> "-74a7bbc4:16a9d8b32d5:-7ff9" [ label = "rdf:rest" ];
 	"NULL" -> "base:Task" [ label = "owl:onClass" ];
 	"NULL" -> "base:hasParticipant" [ label = "owl:onProperty" ];
 	"NULL" -> "base:StartStopFunction" [ label = "owl:someValuesFrom" ];
 	"NULL" -> "base:Sensor" [ label = "owl:someValuesFrom" ];
-	"NULL" -> "-74a7bbc4:16a9d8b32d5:-7ffb" [ label = "rdf:rest" ];
 	"NULL" -> "base:hasDescription" [ label = "owl:onProperty" ];
 	"NULL" -> "base:isAccomplishedBy" [ label = "owl:onProperty" ];
 	"NULL" -> "base:controlsProperty" [ label = "owl:onProperty" ];
@@ -30,23 +28,23 @@ node [shape = rectangle, color="orange"]; "base:StartStopFunction" "base:Tempera
 	"NULL" -> "base:represents" [ label = "owl:onProperty" ];
 	"NULL" -> "base:Light" [ label = "owl:someValuesFrom" ];
 	"NULL" -> "base:measuresProperty" [ label = "owl:onProperty" ];
-	"NULL" -> "9c588ff26a792ed381ba5d3ee6851e80" [ label = "owl:allValuesFrom" ];
-	"NULL" -> "-74a7bbc4:16a9d8b32d5:-7ffa" [ label = "owl:unionOf" ];
 	"NULL" -> "base:offers" [ label = "owl:onProperty" ];
+	"NULL" -> "324821edcb13daab7e672680062619ef" [ label = "owl:allValuesFrom" ];
 	"NULL" -> "base:hasFunction" [ label = "owl:onProperty" ];
 	"NULL" -> "base:Energy" [ label = "rdf:first" ];
 	"NULL" -> "base:hasTimestamp" [ label = "owl:onProperty" ];
 	"NULL" -> "base:EventFunction" [ label = "owl:someValuesFrom" ];
 	"NULL" -> "base:Command" [ label = "owl:onClass" ];
+	"NULL" -> "-21ef1500:16a9dfb0645:-7ffa" [ label = "owl:unionOf" ];
 	"NULL" -> "base:Switch" [ label = "owl:someValuesFrom" ];
 	"NULL" -> "base:SensingFunction" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "-21ef1500:16a9dfb0645:-7ffb" [ label = "rdf:rest" ];
 	"NULL" -> "base:isUsedFor" [ label = "owl:onProperty" ];
 	"NULL" -> "base:Device" [ label = "owl:onClass" ];
 	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
 	"NULL" -> "base:isParticipantIn" [ label = "owl:onProperty" ];
 	"NULL" -> "base:Smoke" [ label = "owl:someValuesFrom" ];
 	"NULL" -> "base:Energy" [ label = "owl:someValuesFrom" ];
-	"NULL" -> "6011c23a5184a89fb5cda3f113c87c39" [ label = "owl:allValuesFrom" ];
 	"NULL" -> "base:Function" [ label = "owl:onClass" ];
 	"NULL" -> "base:Service" [ label = "owl:allValuesFrom" ];
 	"NULL" -> "base:ActuatingFunction" [ label = "owl:someValuesFrom" ];
@@ -54,7 +52,6 @@ node [shape = rectangle, color="orange"]; "base:StartStopFunction" "base:Tempera
 	"NULL" -> "base:NotifyCommand" [ label = "owl:allValuesFrom" ];
 	"NULL" -> "base:hasValue" [ label = "owl:onProperty" ];
 	"NULL" -> "base:isOfferedBy" [ label = "owl:onProperty" ];
-	"NULL" -> "-74a7bbc4:16a9d8b32d5:-7ffc" [ label = "owl:unionOf" ];
 	"NULL" -> "base:Comfort" [ label = "owl:hasValue" ];
 	"NULL" -> "base:UnitOfMeasure" [ label = "owl:onClass" ];
 	"NULL" -> "base:accomplishes" [ label = "owl:onProperty" ];
@@ -64,19 +61,22 @@ node [shape = rectangle, color="orange"]; "base:StartStopFunction" "base:Tempera
 	"NULL" -> "base:EnergyEfficiency" [ label = "owl:hasValue" ];
 	"NULL" -> "base:hasManufacturer" [ label = "owl:onProperty" ];
 	"NULL" -> "base:hasCommand" [ label = "owl:onProperty" ];
+	"NULL" -> "-21ef1500:16a9dfb0645:-7ffc" [ label = "owl:unionOf" ];
 	"NULL" -> "base:isMeasuredIn" [ label = "owl:onProperty" ];
 	"NULL" -> "base:consistsOf" [ label = "owl:onProperty" ];
 	"NULL" -> "base:isMeasuredByDevice" [ label = "owl:onProperty" ];
+	"NULL" -> "5c56761723c9be2a7aac2bfde43b6231" [ label = "owl:allValuesFrom" ];
 	"NULL" -> "base:Power" [ label = "rdf:first" ];
 	"NULL" -> "base:MeteringFunction" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "-21ef1500:16a9dfb0645:-7ff9" [ label = "rdf:rest" ];
 	"NULL" -> "base:Commodity" [ label = "owl:allValuesFrom" ];
 	"NULL" -> "base:Safety" [ label = "owl:hasValue" ];
 	"NULL" -> "base:Device" [ label = "owl:allValuesFrom" ];
-	"NULL" -> "base:relatesToProperty" [ label = "owl:onProperty" ];
+	"NULL" -> "base:Organization" [ label = "owl:someValuesFrom" ];
 	"NULL" -> "base:UnitOfMeasure" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "base:relatesToProperty" [ label = "owl:onProperty" ];
 	"NULL" -> "base:Agent" [ label = "owl:someValuesFrom" ];
 	"NULL" -> "base:MeterReading" [ label = "owl:hasValue" ];
-	"NULL" -> "base:Organization" [ label = "owl:someValuesFrom" ];
 	"NULL" -> "base:isCommandOf" [ label = "owl:onProperty" ];
 	"owl:Thing" -> "xsd:string" [ label = "base:hasName" ];
 	"owl:Thing" -> "xsd:string" [ label = "base:hasDescription" ];
