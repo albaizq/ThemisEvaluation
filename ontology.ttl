@@ -15,7 +15,7 @@
 <https://w3id.org/def/themisEval> rdf:type owl:Ontology ;
                                    rdfs:comment "Version of SAREF ontology for evaluating Themis. This ontology is created only for testing purposes" ;
                                    owl:versionInfo "0.0.2"^^xsd:string ;
-                                   dcterms:title "SAREF for Themis evaluation"^^xsd:string .
+                                   dcterms:title "SAREF for Themis evaluation"^^xsd:stringit .
 
 #################################################################
 #    Object Properties
@@ -400,6 +400,10 @@
                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
                         ] ,
                         [ rdf:type owl:Restriction ;
+                          owl:onProperty :makesMeasurement ;
+                          owl:allValuesFrom :Measurement
+                        ] ,
+                        [ rdf:type owl:Restriction ;
                           owl:onProperty :hasModel ;
                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
                         ] ;
@@ -535,6 +539,8 @@
       rdfs:comment "Heating, Ventilation and Air Conditioning (HVAC) device that provides indoor environmental comfort"^^xsd:string ;
       rdfs:label "HVAC"^^xsd:string .
 
+:Indicator rdf:type owl:Class ;
+                rdfs:subClassOf :Measurement .
 
 ###  https://w3id.org/def/themisEval#LevelControlFunction
 :LevelControlFunction rdf:type owl:Class ;
@@ -590,6 +596,36 @@
       rdfs:comment "A type of energy-related device that consumes energy"^^xsd:string ;
       rdfs:label "Load"^^xsd:string .
 
+:Measurement rdf:type owl:Class ;
+                  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                    owl:onProperty :isMeasuredIn ;
+                                    owl:allValuesFrom :UnitOfMeasure
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :relatesToProperty ;
+                                    owl:allValuesFrom :Property
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :isMeasuredIn ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass :UnitOfMeasure
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :relatesToProperty ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass :Property
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasTimestamp ;
+                                    owl:allValuesFrom xsd:dateTime
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasValue ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onDataRange xsd:float
+                                  ] ;
+                  rdfs:comment "Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement."@en ;
+                  rdfs:label "Measurement"@en .
 
 ###  https://w3id.org/def/themisEval#Meter
 :Meter rdf:type owl:Class ;
