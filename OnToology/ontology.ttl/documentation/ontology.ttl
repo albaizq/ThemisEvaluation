@@ -910,10 +910,6 @@
                 rdfs:label "Washing machine" .
 
 
-###  https://w3id.org/saref#Power
-<https://w3id.org/saref#Power> rdf:type owl:Class .
-
-
 #################################################################
 #    Individuals
 #################################################################
