@@ -901,7 +901,7 @@ _:genid65 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/def/themisE
 # 
 # https://w3id.org/def/themisEval#AccumulatedEnergyProduced
 <https://w3id.org/def/themisEval#AccumulatedEnergyProduced> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/themisEval#AccumulatedEnergyProduced> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#Power> .
+<https://w3id.org/def/themisEval#AccumulatedEnergyProduced> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/themisEval#Power> .
 # 
 # https://w3id.org/def/themisEval#Cleaning
 <https://w3id.org/def/themisEval#Cleaning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
