@@ -136,6 +136,9 @@
     "HVAC" : {
       "@id" : "https://w3id.org/def/themisEval#HVAC"
     },
+    "Thermostat" : {
+      "@id" : "https://w3id.org/def/themisEval#Thermostat"
+    },
     "Energy" : {
       "@id" : "https://w3id.org/def/themisEval#Energy"
     },

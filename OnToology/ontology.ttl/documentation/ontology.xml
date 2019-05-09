@@ -1414,6 +1414,16 @@
     
 
 
+    <!-- https://w3id.org/def/themisEval#Thermostat -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/themisEval#Thermostat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/themisEval#Actuator"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/themisEval#Sensor"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/def/themisEval#UnitOfMeasure -->
 
 
@@ -1581,7 +1591,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/themisEval#AccumulatedEnergyProduced">
-        <rdf:type rdf:resource="https://w3id.org/def/themisEval#Power"/>
+        <rdf:type rdf:resource="https://w3id.org/def/themisEval#Property"/>
     </owl:NamedIndividual>
     
 
