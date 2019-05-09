@@ -92,8 +92,14 @@
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
     },
+    "Indicator" : {
+      "@id" : "https://w3id.org/def/themisEval#Indicator"
+    },
     "OnCommand" : {
       "@id" : "https://w3id.org/def/themisEval#OnCommand"
+    },
+    "Measurement" : {
+      "@id" : "https://w3id.org/def/themisEval#Measurement"
     },
     "LightingDevice" : {
       "@id" : "https://w3id.org/def/themisEval#LightingDevice"

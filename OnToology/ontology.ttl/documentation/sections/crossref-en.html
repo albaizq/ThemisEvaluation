@@ -74,6 +74,11 @@ This section provides details for each class and property defined by SAREF for T
          <a href="#https://w3id.org/def/themisEval#HVAC" title="https://w3id.org/def/themisEval#HVAC">HVAC</a>
       </li>
       <li>
+         <a href="#https://w3id.org/def/themisEval#Indicator" title="https://w3id.org/def/themisEval#Indicator">
+            <span>indicator</span>
+         </a>
+      </li>
+      <li>
          <a href="#https://w3id.org/def/themisEval#LevelControlFunction"
             title="https://w3id.org/def/themisEval#LevelControlFunction">Level control function</a>
       </li>
@@ -88,6 +93,9 @@ This section provides details for each class and property defined by SAREF for T
       </li>
       <li>
          <a href="#https://w3id.org/def/themisEval#Load" title="https://w3id.org/def/themisEval#Load">Load</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/themisEval#Measurement" title="https://w3id.org/def/themisEval#Measurement">Measurement</a>
       </li>
       <li>
          <a href="#https://w3id.org/def/themisEval#Meter" title="https://w3id.org/def/themisEval#Meter">Meter</a>
@@ -631,6 +639,21 @@ This section provides details for each class and property defined by SAREF for T
          </dd>
       </dl>
    </div>
+   <div class="entity" id="https://w3id.org/def/themisEval#Indicator">
+      <h3>indicator<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/themisEval#Indicator</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/def/themisEval#Measurement" title="https://w3id.org/def/themisEval#Measurement">Measurement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="https://w3id.org/def/themisEval#LevelControlFunction">
       <h3>Level control function<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -723,6 +746,26 @@ This section provides details for each class and property defined by SAREF for T
          <dt>has sub-classes</dt>
          <dd>
             <a href="#https://w3id.org/def/themisEval#WashingMachine" title="https://w3id.org/def/themisEval#WashingMachine">Washing machine</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/def/themisEval#Measurement">
+      <h3>Measurement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/themisEval#Measurement</p>
+      <div class="comment">
+         <span class="markdown">Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/def/themisEval#Indicator" title="https://w3id.org/def/themisEval#Indicator">indicator</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
