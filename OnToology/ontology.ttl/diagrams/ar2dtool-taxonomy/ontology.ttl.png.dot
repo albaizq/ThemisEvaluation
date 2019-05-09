@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "base:StartStopFunction" "base:BuildingRelated" "base:Temperature" "base:Smoke" "base:PhysicalThing" "base:Function" "base:Energy" "base:EventFunction" "base:DoorSwitch" "base:LevelControlFunction" "base:Switch" "base:GetCommand" "base:Actuator" "base:Electricity" "base:Appliance" "base:ActuatingFunction" "base:OnOffFunction" "base:LightSwitch" "base:Generator" "base:EnergyMeter" "base:Commodity" "base:EnergyRelated" "base:NotifyCommand" "base:SmokeSensor" "base:Storage" "base:Price" "base:Gas" "base:LightingDevice" "base:Device" "base:TemperatureSensor" "base:HVAC" "base:CloseCommand" "base:Meter" "base:OffCommand" "base:WashingMachine" "base:Property" "base:MeteringFunction" "base:Command" "base:FunctionRelated" "base:Light" "http://www.w3.org/ns/ssn/System" "base:OpenCloseFunction" "base:Pressure" "base:Sensor" "base:OnCommand" "base:Load" "base:Power" "base:SensingFunction" ; /*classes style*/
+node [shape = rectangle, color="black"]; "base:StartStopFunction" "base:BuildingRelated" "base:Temperature" "base:Smoke" "base:PhysicalThing" "base:Function" "base:Energy" "base:EventFunction" "base:DoorSwitch" "base:LevelControlFunction" "base:Switch" "base:GetCommand" "base:Actuator" "base:Electricity" "base:Appliance" "base:ActuatingFunction" "base:OnOffFunction" "base:LightSwitch" "base:Generator" "base:EnergyMeter" "base:Commodity" "base:EnergyRelated" "base:NotifyCommand" "base:SmokeSensor" "base:Storage" "base:Price" "base:Gas" "base:LightingDevice" "base:Device" "base:TemperatureSensor" "base:HVAC" "base:CloseCommand" "base:Meter" "base:OffCommand" "base:Indicator" "base:WashingMachine" "base:Property" "base:MeteringFunction" "base:Command" "base:FunctionRelated" "base:Light" "http://www.w3.org/ns/ssn/System" "base:OpenCloseFunction" "base:Pressure" "base:Sensor" "base:OnCommand" "base:Measurement" "base:Load" "base:Power" "base:SensingFunction" ; /*classes style*/
 	"base:OnOffFunction" -> "base:ActuatingFunction" [ label = "rdfs:subClassOf" ];
 	"base:Light" -> "base:Property" [ label = "rdfs:subClassOf" ];
 	"base:Electricity" -> "base:Commodity" [ label = "rdfs:subClassOf" ];
@@ -29,6 +29,7 @@ node [shape = rectangle, color="black"]; "base:StartStopFunction" "base:Building
 	"base:Load" -> "base:EnergyRelated" [ label = "rdfs:subClassOf" ];
 	"base:LightingDevice" -> "base:FunctionRelated" [ label = "rdfs:subClassOf" ];
 	"base:Power" -> "base:Property" [ label = "rdfs:subClassOf" ];
+	"base:Indicator" -> "base:Measurement" [ label = "rdfs:subClassOf" ];
 	"base:Smoke" -> "base:Property" [ label = "rdfs:subClassOf" ];
 	"base:LevelControlFunction" -> "base:ActuatingFunction" [ label = "rdfs:subClassOf" ];
 	"base:NotifyCommand" -> "base:Command" [ label = "rdfs:subClassOf" ];
