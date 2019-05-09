@@ -910,6 +910,10 @@
                 rdfs:label "Washing machine" .
 
 
+###  https://w3id.org/saref#Power
+<https://w3id.org/saref#Power> rdf:type owl:Class .
+
+
 #################################################################
 #    Individuals
 #################################################################
@@ -984,7 +988,7 @@
 
 ###  https://w3id.org/def/themisEval#AccumulatedEnergyProduced
 :AccumulatedEnergyProduced rdf:type owl:NamedIndividual ,
-                                    :Property .
+                                    <https://w3id.org/saref#Power> .
 
 
 ###  https://w3id.org/def/themisEval#Cleaning

@@ -1459,6 +1459,13 @@
     
 
 
+    <!-- https://w3id.org/saref#Power -->
+
+
+    <owl:Class rdf:about="https://w3id.org/saref#Power"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1591,7 +1598,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/themisEval#AccumulatedEnergyProduced">
-        <rdf:type rdf:resource="https://w3id.org/def/themisEval#Property"/>
+        <rdf:type rdf:resource="https://w3id.org/saref#Power"/>
     </owl:NamedIndividual>
     
 
