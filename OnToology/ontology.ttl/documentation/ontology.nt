@@ -891,6 +891,10 @@ _:genid65 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/def/themisE
 <http://www.wurvoc.org/vocabularies/om-1.8/watt> <http://www.w3.org/2000/01/rdf-schema#comment> "The watt is a unit of power defined as joule divided by second = newton times metre divided by second = volt times ampere = kilogram times square metre divided by second to the power 3."@en .
 <http://www.wurvoc.org/vocabularies/om-1.8/watt> <http://www.w3.org/2000/01/rdf-schema#label> "watt" .
 # 
+# https://w3id.org/def/themisEval#AccumulatedEnergyProduced
+<https://w3id.org/def/themisEval#AccumulatedEnergyProduced> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/themisEval#AccumulatedEnergyProduced> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/themisEval#Power> .
+# 
 # https://w3id.org/def/themisEval#Cleaning
 <https://w3id.org/def/themisEval#Cleaning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/themisEval#Cleaning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/themisEval#Task> .
