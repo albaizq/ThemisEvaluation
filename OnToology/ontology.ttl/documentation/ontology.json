@@ -719,7 +719,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/def/themisEval#AccumulatedEnergyProduced",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/themisEval#Power" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/themisEval#Property" ]
 }, {
   "@id" : "https://w3id.org/def/themisEval#ActuatingFunction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -1661,6 +1661,14 @@
     "@id" : "_:genid62"
   }, {
     "@id" : "_:genid63"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/themisEval#Thermostat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/themisEval#Actuator"
+  }, {
+    "@id" : "https://w3id.org/def/themisEval#Sensor"
   } ]
 }, {
   "@id" : "https://w3id.org/def/themisEval#Toggle",

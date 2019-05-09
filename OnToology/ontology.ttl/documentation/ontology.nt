@@ -805,6 +805,11 @@ _:genid63 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/def/themisE
 <https://w3id.org/def/themisEval#TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A device that consists of a sensor, has category saref:Sensor, performs the saref:SensingFunction and is used for the purpose of sensing a property of type saref:Temperature" .
 <https://w3id.org/def/themisEval#TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Temperature sensor" .
 # 
+# https://w3id.org/def/themisEval#Thermostat
+<https://w3id.org/def/themisEval#Thermostat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/themisEval#Thermostat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/themisEval#Actuator> .
+<https://w3id.org/def/themisEval#Thermostat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/themisEval#Sensor> .
+# 
 # https://w3id.org/def/themisEval#UnitOfMeasure
 <https://w3id.org/def/themisEval#UnitOfMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/themisEval#UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#comment> "The unit of measure is a standard for measurement of a quantity, such as a Property. For example,  Power is a property and Watt is a unit of power that represents a definite predetermined power: when we say 10 Watt, we actually mean 10 times the definite predetermined power called \"watt\". Our definition is based on the definition of unit of measure in the Ontology of units of Measure (OM). We propose here a list of some units of measure that are relevant for the purpose of SAREF, but this list can be extended, also using some other ontologies rather than the Ontology of units of Measure (OM)." .
@@ -893,7 +898,7 @@ _:genid65 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/def/themisE
 # 
 # https://w3id.org/def/themisEval#AccumulatedEnergyProduced
 <https://w3id.org/def/themisEval#AccumulatedEnergyProduced> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/themisEval#AccumulatedEnergyProduced> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/themisEval#Power> .
+<https://w3id.org/def/themisEval#AccumulatedEnergyProduced> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/themisEval#Property> .
 # 
 # https://w3id.org/def/themisEval#Cleaning
 <https://w3id.org/def/themisEval#Cleaning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

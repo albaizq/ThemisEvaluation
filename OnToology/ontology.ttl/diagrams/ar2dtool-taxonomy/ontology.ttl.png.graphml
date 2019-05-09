@@ -5,7 +5,7 @@
    <key for="edge" id="d2" yfiles.type="edgegraphics" />
    <key attr.name="description" attr.type="string" for="edge" id="d3" />
    <key for="graphml" id="d4" yfiles.type="resources" />
-   <graph edgedefault="directed" id="G" parse.edges="44" parse.nodes="50" parse.order="free">
+   <graph edgedefault="directed" id="G" parse.edges="46" parse.nodes="51" parse.order="free">
       <node id="nid_base:OnOffFunction">
          <data key="d0">
             <y:ShapeNode>
@@ -320,7 +320,41 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf10" source="nid_base:Sensor" target="nid_base:FunctionRelated">
+      <node id="nid_base:Thermostat">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="150.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">base:Thermostat</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subClassOf10" source="nid_base:Thermostat" target="nid_base:Sensor">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_rdfs:subClassOf11" source="nid_base:Thermostat" target="nid_base:Actuator">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_rdfs:subClassOf12" source="nid_base:Sensor" target="nid_base:FunctionRelated">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -343,7 +377,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf11" source="nid_base:SmokeSensor" target="nid_base:Sensor">
+    <edge id="eid_rdfs:subClassOf13" source="nid_base:SmokeSensor" target="nid_base:Sensor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -366,7 +400,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf12" source="nid_base:Generator" target="nid_base:EnergyRelated">
+    <edge id="eid_rdfs:subClassOf14" source="nid_base:Generator" target="nid_base:EnergyRelated">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -389,7 +423,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf13" source="nid_base:Pressure" target="nid_base:Property">
+    <edge id="eid_rdfs:subClassOf15" source="nid_base:Pressure" target="nid_base:Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -424,7 +458,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf14" source="nid_base:DoorSwitch" target="nid_base:Switch">
+    <edge id="eid_rdfs:subClassOf16" source="nid_base:DoorSwitch" target="nid_base:Switch">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -447,7 +481,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf15" source="nid_base:Appliance" target="nid_base:FunctionRelated">
+    <edge id="eid_rdfs:subClassOf17" source="nid_base:Appliance" target="nid_base:FunctionRelated">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -470,7 +504,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf16" source="nid_base:EnergyRelated" target="nid_base:Device">
+    <edge id="eid_rdfs:subClassOf18" source="nid_base:EnergyRelated" target="nid_base:Device">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -481,7 +515,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf17" source="nid_base:FunctionRelated" target="nid_base:Device">
+    <edge id="eid_rdfs:subClassOf19" source="nid_base:FunctionRelated" target="nid_base:Device">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -516,7 +550,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf18" source="nid_base:EnergyMeter" target="nid_base:Meter">
+    <edge id="eid_rdfs:subClassOf20" source="nid_base:EnergyMeter" target="nid_base:Meter">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -539,7 +573,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf19" source="nid_base:GetCommand" target="nid_base:Command">
+    <edge id="eid_rdfs:subClassOf21" source="nid_base:GetCommand" target="nid_base:Command">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -562,7 +596,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf20" source="nid_base:BuildingRelated" target="nid_base:Device">
+    <edge id="eid_rdfs:subClassOf22" source="nid_base:BuildingRelated" target="nid_base:Device">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -585,7 +619,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf21" source="nid_base:LightSwitch" target="nid_base:Switch">
+    <edge id="eid_rdfs:subClassOf23" source="nid_base:LightSwitch" target="nid_base:Switch">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -596,7 +630,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf22" source="nid_base:Meter" target="nid_base:FunctionRelated">
+    <edge id="eid_rdfs:subClassOf24" source="nid_base:Meter" target="nid_base:FunctionRelated">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -619,7 +653,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf23" source="nid_base:Energy" target="nid_base:Property">
+    <edge id="eid_rdfs:subClassOf25" source="nid_base:Energy" target="nid_base:Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -642,7 +676,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf24" source="nid_base:Load" target="nid_base:EnergyRelated">
+    <edge id="eid_rdfs:subClassOf26" source="nid_base:Load" target="nid_base:EnergyRelated">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -665,7 +699,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf25" source="nid_base:LightingDevice" target="nid_base:FunctionRelated">
+    <edge id="eid_rdfs:subClassOf27" source="nid_base:LightingDevice" target="nid_base:FunctionRelated">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -688,7 +722,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf26" source="nid_base:Power" target="nid_base:Property">
+    <edge id="eid_rdfs:subClassOf28" source="nid_base:Power" target="nid_base:Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -723,7 +757,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf27" source="nid_base:Indicator" target="nid_base:Measurement">
+    <edge id="eid_rdfs:subClassOf29" source="nid_base:Indicator" target="nid_base:Measurement">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -746,7 +780,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf28" source="nid_base:Smoke" target="nid_base:Property">
+    <edge id="eid_rdfs:subClassOf30" source="nid_base:Smoke" target="nid_base:Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -769,7 +803,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf29" source="nid_base:LevelControlFunction" target="nid_base:ActuatingFunction">
+    <edge id="eid_rdfs:subClassOf31" source="nid_base:LevelControlFunction" target="nid_base:ActuatingFunction">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -792,7 +826,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf30" source="nid_base:NotifyCommand" target="nid_base:Command">
+    <edge id="eid_rdfs:subClassOf32" source="nid_base:NotifyCommand" target="nid_base:Command">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -815,7 +849,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf31" source="nid_base:Temperature" target="nid_base:Property">
+    <edge id="eid_rdfs:subClassOf33" source="nid_base:Temperature" target="nid_base:Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -838,7 +872,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf32" source="nid_base:EventFunction" target="nid_base:Function">
+    <edge id="eid_rdfs:subClassOf34" source="nid_base:EventFunction" target="nid_base:Function">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -861,7 +895,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf33" source="nid_base:Gas" target="nid_base:Commodity">
+    <edge id="eid_rdfs:subClassOf35" source="nid_base:Gas" target="nid_base:Commodity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -884,7 +918,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf34" source="nid_base:WashingMachine" target="nid_base:Load">
+    <edge id="eid_rdfs:subClassOf36" source="nid_base:WashingMachine" target="nid_base:Load">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -895,7 +929,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf35" source="nid_base:WashingMachine" target="nid_base:Appliance">
+    <edge id="eid_rdfs:subClassOf37" source="nid_base:WashingMachine" target="nid_base:Appliance">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -918,7 +952,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf36" source="nid_base:MeteringFunction" target="nid_base:Function">
+    <edge id="eid_rdfs:subClassOf38" source="nid_base:MeteringFunction" target="nid_base:Function">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -929,7 +963,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf37" source="nid_base:Switch" target="nid_base:Actuator">
+    <edge id="eid_rdfs:subClassOf39" source="nid_base:Switch" target="nid_base:Actuator">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -952,7 +986,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf38" source="nid_base:OffCommand" target="nid_base:Command">
+    <edge id="eid_rdfs:subClassOf40" source="nid_base:OffCommand" target="nid_base:Command">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -975,7 +1009,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf39" source="nid_base:HVAC" target="nid_base:FunctionRelated">
+    <edge id="eid_rdfs:subClassOf41" source="nid_base:HVAC" target="nid_base:FunctionRelated">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -998,7 +1032,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf40" source="nid_base:Price" target="nid_base:Property">
+    <edge id="eid_rdfs:subClassOf42" source="nid_base:Price" target="nid_base:Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1033,7 +1067,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf41" source="nid_base:PhysicalThing" target="nid_http://www.w3.org/ns/ssn/System">
+    <edge id="eid_rdfs:subClassOf43" source="nid_base:PhysicalThing" target="nid_http://www.w3.org/ns/ssn/System">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1056,7 +1090,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf42" source="nid_base:CloseCommand" target="nid_base:Command">
+    <edge id="eid_rdfs:subClassOf44" source="nid_base:CloseCommand" target="nid_base:Command">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1079,7 +1113,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf43" source="nid_base:OpenCloseFunction" target="nid_base:ActuatingFunction">
+    <edge id="eid_rdfs:subClassOf45" source="nid_base:OpenCloseFunction" target="nid_base:ActuatingFunction">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
