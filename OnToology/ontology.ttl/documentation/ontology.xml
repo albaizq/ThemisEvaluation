@@ -8,7 +8,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/def/themisEval">
-        <terms:title>SAREF for Themis evaluation</terms:title>
+        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#stringit">SAREF for Themis evaluation</terms:title>
         <rdfs:comment>Version of SAREF ontology for evaluating Themis. This ontology is created only for testing purposes</rdfs:comment>
         <owl:versionInfo>0.0.2</owl:versionInfo>
     </owl:Ontology>
@@ -633,6 +633,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/themisEval#makesMeasurement"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/def/themisEval#Measurement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/def/themisEval#measuresProperty"/>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/def/themisEval#Property"/>
             </owl:Restriction>
@@ -882,6 +888,15 @@
     
 
 
+    <!-- https://w3id.org/def/themisEval#Indicator -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/themisEval#Indicator">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/themisEval#Measurement"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/def/themisEval#LevelControlFunction -->
 
 
@@ -963,6 +978,55 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/themisEval#EnergyRelated"/>
         <rdfs:comment>A type of energy-related device that consumes energy</rdfs:comment>
         <rdfs:label>Load</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/themisEval#Measurement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/themisEval#Measurement">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/themisEval#isMeasuredIn"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/def/themisEval#UnitOfMeasure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/themisEval#relatesToProperty"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/def/themisEval#Property"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/themisEval#isMeasuredIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/def/themisEval#UnitOfMeasure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/themisEval#relatesToProperty"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/def/themisEval#Property"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/themisEval#hasTimestamp"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/themisEval#hasValue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement.</rdfs:comment>
+        <rdfs:label xml:lang="en">Measurement</rdfs:label>
     </owl:Class>
     
 
