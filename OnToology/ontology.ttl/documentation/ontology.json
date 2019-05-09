@@ -2113,7 +2113,4 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "watt hour"
   } ]
-}, {
-  "@id" : "https://w3id.org/saref#Power",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 } ]
