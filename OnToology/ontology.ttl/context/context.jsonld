@@ -1,0 +1,347 @@
+{
+  "@context" : {
+    "actsUpon" : {
+      "@id" : "https://w3id.org/def/themisEval#actsUpon",
+      "@type" : "@id"
+    },
+    "Application" : {
+      "@id" : "https://w3id.org/def/themisEval#Application"
+    },
+    "Switch" : {
+      "@id" : "https://w3id.org/def/themisEval#Switch"
+    },
+    "UnitOfMeasure" : {
+      "@id" : "https://w3id.org/def/themisEval#UnitOfMeasure"
+    },
+    "hasManufacturer" : {
+      "@id" : "https://w3id.org/def/themisEval#hasManufacturer",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasPrice" : {
+      "@id" : "https://w3id.org/def/themisEval#hasPrice",
+      "@type" : "@id"
+    },
+    "NotifyCommand" : {
+      "@id" : "https://w3id.org/def/themisEval#NotifyCommand"
+    },
+    "Meter" : {
+      "@id" : "https://w3id.org/def/themisEval#Meter"
+    },
+    "isControlledByDevice" : {
+      "@id" : "https://w3id.org/def/themisEval#isControlledByDevice",
+      "@type" : "@id"
+    },
+    "Storage" : {
+      "@id" : "https://w3id.org/def/themisEval#Storage"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "Commodity" : {
+      "@id" : "https://w3id.org/def/themisEval#Commodity"
+    },
+    "hasModel" : {
+      "@id" : "https://w3id.org/def/themisEval#hasModel",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "SmokeSensor" : {
+      "@id" : "https://w3id.org/def/themisEval#SmokeSensor"
+    },
+    "MeteringFunction" : {
+      "@id" : "https://w3id.org/def/themisEval#MeteringFunction"
+    },
+    "hasThresholdMeasurement" : {
+      "@id" : "https://w3id.org/def/themisEval#hasThresholdMeasurement",
+      "@type" : "@id"
+    },
+    "accomplishes" : {
+      "@id" : "https://w3id.org/def/themisEval#accomplishes",
+      "@type" : "@id"
+    },
+    "Organization" : {
+      "@id" : "https://w3id.org/def/themisEval#Organization"
+    },
+    "CloseCommand" : {
+      "@id" : "https://w3id.org/def/themisEval#CloseCommand"
+    },
+    "hasName" : {
+      "@id" : "https://w3id.org/def/themisEval#hasName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isOfferedBy" : {
+      "@id" : "https://w3id.org/def/themisEval#isOfferedBy",
+      "@type" : "@id"
+    },
+    "measuresProperty" : {
+      "@id" : "https://w3id.org/def/themisEval#measuresProperty",
+      "@type" : "@id"
+    },
+    "Generator" : {
+      "@id" : "https://w3id.org/def/themisEval#Generator"
+    },
+    "hasValue" : {
+      "@id" : "https://w3id.org/def/themisEval#hasValue"
+    },
+    "hasMeterReadingType" : {
+      "@id" : "https://w3id.org/def/themisEval#hasMeterReadingType",
+      "@type" : "@id"
+    },
+    "Appliance" : {
+      "@id" : "https://w3id.org/def/themisEval#Appliance"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Indicator" : {
+      "@id" : "https://w3id.org/def/themisEval#Indicator"
+    },
+    "OnCommand" : {
+      "@id" : "https://w3id.org/def/themisEval#OnCommand"
+    },
+    "Measurement" : {
+      "@id" : "https://w3id.org/def/themisEval#Measurement"
+    },
+    "LightingDevice" : {
+      "@id" : "https://w3id.org/def/themisEval#LightingDevice"
+    },
+    "hasCommand" : {
+      "@id" : "https://w3id.org/def/themisEval#hasCommand",
+      "@type" : "@id"
+    },
+    "Gas" : {
+      "@id" : "https://w3id.org/def/themisEval#Gas"
+    },
+    "Light" : {
+      "@id" : "https://w3id.org/def/themisEval#Light"
+    },
+    "Temperature" : {
+      "@id" : "https://w3id.org/def/themisEval#Temperature"
+    },
+    "Event" : {
+      "@id" : "https://w3id.org/def/themisEval#Event"
+    },
+    "isAccomplishedBy" : {
+      "@id" : "https://w3id.org/def/themisEval#isAccomplishedBy",
+      "@type" : "@id"
+    },
+    "Price" : {
+      "@id" : "https://w3id.org/def/themisEval#Price"
+    },
+    "LevelControlFunction" : {
+      "@id" : "https://w3id.org/def/themisEval#LevelControlFunction"
+    },
+    "Agent" : {
+      "@id" : "https://w3id.org/def/themisEval#Agent"
+    },
+    "HVAC" : {
+      "@id" : "https://w3id.org/def/themisEval#HVAC"
+    },
+    "Thermostat" : {
+      "@id" : "https://w3id.org/def/themisEval#Thermostat"
+    },
+    "Energy" : {
+      "@id" : "https://w3id.org/def/themisEval#Energy"
+    },
+    "Electricity" : {
+      "@id" : "https://w3id.org/def/themisEval#Electricity"
+    },
+    "hasTime" : {
+      "@id" : "https://w3id.org/def/themisEval#hasTime",
+      "@type" : "@id"
+    },
+    "OpenCloseFunction" : {
+      "@id" : "https://w3id.org/def/themisEval#OpenCloseFunction"
+    },
+    "ActuatingFunction" : {
+      "@id" : "https://w3id.org/def/themisEval#ActuatingFunction"
+    },
+    "GetCommand" : {
+      "@id" : "https://w3id.org/def/themisEval#GetCommand"
+    },
+    "isAbout" : {
+      "@id" : "https://w3id.org/def/themisEval#isAbout",
+      "@type" : "@id"
+    },
+    "Pressure" : {
+      "@id" : "https://w3id.org/def/themisEval#Pressure"
+    },
+    "EnergyRelated" : {
+      "@id" : "https://w3id.org/def/themisEval#EnergyRelated"
+    },
+    "isParticipantIn" : {
+      "@id" : "https://w3id.org/def/themisEval#isParticipantIn",
+      "@type" : "@id"
+    },
+    "relatesToMeasurement" : {
+      "@id" : "https://w3id.org/def/themisEval#relatesToMeasurement",
+      "@type" : "@id"
+    },
+    "OffCommand" : {
+      "@id" : "https://w3id.org/def/themisEval#OffCommand"
+    },
+    "isMeasuredByDevice" : {
+      "@id" : "https://w3id.org/def/themisEval#isMeasuredByDevice",
+      "@type" : "@id"
+    },
+    "PhysicalThing" : {
+      "@id" : "https://w3id.org/def/themisEval#PhysicalThing"
+    },
+    "hasTypicalConsumption" : {
+      "@id" : "https://w3id.org/def/themisEval#hasTypicalConsumption",
+      "@type" : "@id"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "makesMeasurement" : {
+      "@id" : "https://w3id.org/def/themisEval#makesMeasurement",
+      "@type" : "@id"
+    },
+    "SensingFunction" : {
+      "@id" : "https://w3id.org/def/themisEval#SensingFunction"
+    },
+    "DoorSwitch" : {
+      "@id" : "https://w3id.org/def/themisEval#DoorSwitch"
+    },
+    "represents" : {
+      "@id" : "https://w3id.org/def/themisEval#represents",
+      "@type" : "@id"
+    },
+    "Property" : {
+      "@id" : "https://w3id.org/def/themisEval#Property"
+    },
+    "hasFunction" : {
+      "@id" : "https://w3id.org/def/themisEval#hasFunction",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "Command" : {
+      "@id" : "https://w3id.org/def/themisEval#Command"
+    },
+    "isUsedFor" : {
+      "@id" : "https://w3id.org/def/themisEval#isUsedFor",
+      "@type" : "@id"
+    },
+    "hasParticipant" : {
+      "@id" : "https://w3id.org/def/themisEval#hasParticipant",
+      "@type" : "@id"
+    },
+    "TemperatureSensor" : {
+      "@id" : "https://w3id.org/def/themisEval#TemperatureSensor"
+    },
+    "LightSwitch" : {
+      "@id" : "https://w3id.org/def/themisEval#LightSwitch"
+    },
+    "isMeasuredIn" : {
+      "@id" : "https://w3id.org/def/themisEval#isMeasuredIn",
+      "@type" : "@id"
+    },
+    "Smoke" : {
+      "@id" : "https://w3id.org/def/themisEval#Smoke"
+    },
+    "Load" : {
+      "@id" : "https://w3id.org/def/themisEval#Load"
+    },
+    "hasMeterReading" : {
+      "@id" : "https://w3id.org/def/themisEval#hasMeterReading",
+      "@type" : "@id"
+    },
+    "consistsOf" : {
+      "@id" : "https://w3id.org/def/themisEval#consistsOf",
+      "@type" : "@id"
+    },
+    "EventFunction" : {
+      "@id" : "https://w3id.org/def/themisEval#EventFunction"
+    },
+    "WashingMachine" : {
+      "@id" : "https://w3id.org/def/themisEval#WashingMachine"
+    },
+    "isCommandOf" : {
+      "@id" : "https://w3id.org/def/themisEval#isCommandOf",
+      "@type" : "@id"
+    },
+    "BuildingRelated" : {
+      "@id" : "https://w3id.org/def/themisEval#BuildingRelated"
+    },
+    "hasSensingRange" : {
+      "@id" : "https://w3id.org/def/themisEval#hasSensingRange",
+      "@type" : "@id"
+    },
+    "hasSensorType" : {
+      "@id" : "https://w3id.org/def/themisEval#hasSensorType",
+      "@type" : "@id"
+    },
+    "StartStopFunction" : {
+      "@id" : "https://w3id.org/def/themisEval#StartStopFunction"
+    },
+    "hasState" : {
+      "@id" : "https://w3id.org/def/themisEval#hasState",
+      "@type" : "@id"
+    },
+    "hasProfile" : {
+      "@id" : "https://w3id.org/def/themisEval#hasProfile",
+      "@type" : "@id"
+    },
+    "relatesToProperty" : {
+      "@id" : "https://w3id.org/def/themisEval#relatesToProperty",
+      "@type" : "@id"
+    },
+    "OnOffFunction" : {
+      "@id" : "https://w3id.org/def/themisEval#OnOffFunction"
+    },
+    "Function" : {
+      "@id" : "https://w3id.org/def/themisEval#Function"
+    },
+    "Actuator" : {
+      "@id" : "https://w3id.org/def/themisEval#Actuator"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Service" : {
+      "@id" : "https://w3id.org/def/themisEval#Service"
+    },
+    "controlsProperty" : {
+      "@id" : "https://w3id.org/def/themisEval#controlsProperty",
+      "@type" : "@id"
+    },
+    "System" : {
+      "@id" : "http://www.w3.org/ns/ssn/System"
+    },
+    "EnergyMeter" : {
+      "@id" : "https://w3id.org/def/themisEval#EnergyMeter"
+    },
+    "Device" : {
+      "@id" : "https://w3id.org/def/themisEval#Device"
+    },
+    "FunctionRelated" : {
+      "@id" : "https://w3id.org/def/themisEval#FunctionRelated"
+    },
+    "interactsUsing" : {
+      "@id" : "https://w3id.org/def/themisEval#interactsUsing",
+      "@type" : "@id"
+    },
+    "hasDescription" : {
+      "@id" : "https://w3id.org/def/themisEval#hasDescription",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasTimestamp" : {
+      "@id" : "https://w3id.org/def/themisEval#hasTimestamp"
+    },
+    "Power" : {
+      "@id" : "https://w3id.org/def/themisEval#Power"
+    },
+    "Task" : {
+      "@id" : "https://w3id.org/def/themisEval#Task"
+    },
+    "offers" : {
+      "@id" : "https://w3id.org/def/themisEval#offers",
+      "@type" : "@id"
+    },
+    "Sensor" : {
+      "@id" : "https://w3id.org/def/themisEval#Sensor"
+    }
+  }
+}

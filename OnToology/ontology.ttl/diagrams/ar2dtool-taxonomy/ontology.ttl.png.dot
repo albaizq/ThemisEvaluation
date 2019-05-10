@@ -1,0 +1,52 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:StartStopFunction" "base:BuildingRelated" "base:Temperature" "base:Smoke" "base:PhysicalThing" "base:Function" "base:Energy" "base:EventFunction" "base:DoorSwitch" "base:Thermostat" "base:LevelControlFunction" "base:Switch" "base:GetCommand" "base:Actuator" "base:Electricity" "base:Appliance" "base:ActuatingFunction" "base:OnOffFunction" "base:LightSwitch" "base:Generator" "base:EnergyMeter" "base:Commodity" "base:EnergyRelated" "base:NotifyCommand" "base:SmokeSensor" "base:Storage" "base:Price" "base:Gas" "base:LightingDevice" "base:Device" "base:TemperatureSensor" "base:HVAC" "base:CloseCommand" "base:Meter" "base:OffCommand" "base:Indicator" "base:WashingMachine" "base:Property" "base:MeteringFunction" "base:Command" "base:FunctionRelated" "base:Light" "http://www.w3.org/ns/ssn/System" "base:OpenCloseFunction" "base:Pressure" "base:Sensor" "base:OnCommand" "base:Measurement" "base:Load" "base:Power" "base:SensingFunction" ; /*classes style*/
+	"base:OnOffFunction" -> "base:ActuatingFunction" [ label = "rdfs:subClassOf" ];
+	"base:Light" -> "base:Property" [ label = "rdfs:subClassOf" ];
+	"base:Electricity" -> "base:Commodity" [ label = "rdfs:subClassOf" ];
+	"base:SensingFunction" -> "base:Function" [ label = "rdfs:subClassOf" ];
+	"base:StartStopFunction" -> "base:ActuatingFunction" [ label = "rdfs:subClassOf" ];
+	"base:Storage" -> "base:EnergyRelated" [ label = "rdfs:subClassOf" ];
+	"base:ActuatingFunction" -> "base:Function" [ label = "rdfs:subClassOf" ];
+	"base:OnCommand" -> "base:Command" [ label = "rdfs:subClassOf" ];
+	"base:Actuator" -> "base:FunctionRelated" [ label = "rdfs:subClassOf" ];
+	"base:TemperatureSensor" -> "base:Sensor" [ label = "rdfs:subClassOf" ];
+	"base:Thermostat" -> "base:Sensor" [ label = "rdfs:subClassOf" ];
+	"base:Thermostat" -> "base:Actuator" [ label = "rdfs:subClassOf" ];
+	"base:Sensor" -> "base:FunctionRelated" [ label = "rdfs:subClassOf" ];
+	"base:SmokeSensor" -> "base:Sensor" [ label = "rdfs:subClassOf" ];
+	"base:Generator" -> "base:EnergyRelated" [ label = "rdfs:subClassOf" ];
+	"base:Pressure" -> "base:Property" [ label = "rdfs:subClassOf" ];
+	"base:DoorSwitch" -> "base:Switch" [ label = "rdfs:subClassOf" ];
+	"base:Appliance" -> "base:FunctionRelated" [ label = "rdfs:subClassOf" ];
+	"base:EnergyRelated" -> "base:Device" [ label = "rdfs:subClassOf" ];
+	"base:FunctionRelated" -> "base:Device" [ label = "rdfs:subClassOf" ];
+	"base:EnergyMeter" -> "base:Meter" [ label = "rdfs:subClassOf" ];
+	"base:GetCommand" -> "base:Command" [ label = "rdfs:subClassOf" ];
+	"base:BuildingRelated" -> "base:Device" [ label = "rdfs:subClassOf" ];
+	"base:LightSwitch" -> "base:Switch" [ label = "rdfs:subClassOf" ];
+	"base:Meter" -> "base:FunctionRelated" [ label = "rdfs:subClassOf" ];
+	"base:Energy" -> "base:Property" [ label = "rdfs:subClassOf" ];
+	"base:Load" -> "base:EnergyRelated" [ label = "rdfs:subClassOf" ];
+	"base:LightingDevice" -> "base:FunctionRelated" [ label = "rdfs:subClassOf" ];
+	"base:Power" -> "base:Property" [ label = "rdfs:subClassOf" ];
+	"base:Indicator" -> "base:Measurement" [ label = "rdfs:subClassOf" ];
+	"base:Smoke" -> "base:Property" [ label = "rdfs:subClassOf" ];
+	"base:LevelControlFunction" -> "base:ActuatingFunction" [ label = "rdfs:subClassOf" ];
+	"base:NotifyCommand" -> "base:Command" [ label = "rdfs:subClassOf" ];
+	"base:Temperature" -> "base:Property" [ label = "rdfs:subClassOf" ];
+	"base:EventFunction" -> "base:Function" [ label = "rdfs:subClassOf" ];
+	"base:Gas" -> "base:Commodity" [ label = "rdfs:subClassOf" ];
+	"base:WashingMachine" -> "base:Load" [ label = "rdfs:subClassOf" ];
+	"base:WashingMachine" -> "base:Appliance" [ label = "rdfs:subClassOf" ];
+	"base:MeteringFunction" -> "base:Function" [ label = "rdfs:subClassOf" ];
+	"base:Switch" -> "base:Actuator" [ label = "rdfs:subClassOf" ];
+	"base:OffCommand" -> "base:Command" [ label = "rdfs:subClassOf" ];
+	"base:HVAC" -> "base:FunctionRelated" [ label = "rdfs:subClassOf" ];
+	"base:Price" -> "base:Property" [ label = "rdfs:subClassOf" ];
+	"base:PhysicalThing" -> "http://www.w3.org/ns/ssn/System" [ label = "rdfs:subClassOf" ];
+	"base:CloseCommand" -> "base:Command" [ label = "rdfs:subClassOf" ];
+	"base:OpenCloseFunction" -> "base:ActuatingFunction" [ label = "rdfs:subClassOf" ];
+
+}
